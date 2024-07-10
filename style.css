@@ -69,7 +69,7 @@ nav {
     display: flex;
     align-items: flex-end;
     justify-content: center;
-    height: 100vh;
+    height: 100%;
 }
 
 img {
@@ -119,11 +119,11 @@ img {
 }
 
 .fs-10 {
-    font-size: 4rem;
+    font-size: 4rem !important;
 }
 
 .fs-7 {
-    font-size: .5rem;
+    font-size: .5rem !important;
 }
 
 p {
@@ -146,12 +146,16 @@ p {
 .fs-8 {
     font-size: 2rem;
 }
+.j-c-e {
+    justify-content: end;
+}
 
 .aboutme-pic {
     display: flex;
     align-items: flex-end;
     justify-content: center;
 }
+
 
 .w-80 {
     width: 80vw;
@@ -165,6 +169,9 @@ p {
 
 .col {
     position: relative;
+}
+.img-fluid {
+    width: 90% !important;
 }
 
 .img-fluid:hover {
@@ -192,12 +199,6 @@ p {
     opacity: 1;
 }
 
-@media (max-width: 768px) {
-    .col-12.col-md-6.col-lg-3.mb-4 {
-        flex: 0 0 100%;
-        max-width: 100%;
-    }
-}
 
 
 img {
@@ -242,6 +243,7 @@ img {
     text-decoration: none;
     align-content: center;
     text-align: center;
+    padding: 10px 0px;
 }
 
 .button-2 {
@@ -252,8 +254,7 @@ img {
     text-decoration: none;
     align-content: center;
     text-align: center;
-    margin: 0px 5px;
-
+    padding: 10px 0px;
 }
 
 @media screen and (max-width: 768px) {
@@ -295,4 +296,43 @@ img {
 .real-footer {
     background: #333;
     min-height: 200px;
+}
+@media screen and (max-width: 768px) {
+    .aboutme-pic {
+        display: none !important;
+        width: 90vw !important;
+        height: 90vw !important;
+    }
+    .custom-flex {
+        width: 90vw;
+    }
+    .row {
+        padding-top: 15vh !important;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+   .col-12.col-md-6.col-lg-3.mb-4 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
+@media screen and (min-width: 768px) {
+    .button-1, .button-2 {
+        width: 45%;
+    }
+    .buttons {
+        display: flex;
+        flex-direction: row;
+        justify-content: center !important;
+    }
+}
+ 
+.active {
+    color: #f0f0f0 !important;
+}
+
+section {
+    padding: 50px 0;
+    min-height: 100vh;
 }
