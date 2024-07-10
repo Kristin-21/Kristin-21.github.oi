@@ -336,3 +336,6 @@ section {
     padding: 50px 0;
     min-height: 100vh;
 }
+.pt-6 {
+    padding-top: 75px !important;
+}
